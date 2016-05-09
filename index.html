@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>snowpatch by ruscur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">snowpatch</h1>
+      <h2 class="project-tagline">continuous integration for patches</h2>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="snowpatch---ci-for-patches-" class="anchor" href="#snowpatch---ci-for-patches-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>snowpatch - CI for patches <a href="https://travis-ci.org/ruscur/snowpatch"><img src="https://travis-ci.org/ruscur/snowpatch.svg?branch=master" alt="Build Status"></a>
+</h1>
+
+<h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>snowpatch is a continuous integration tool for projects using a patch-based,
+mailing-list-centric git workflow. This workflow is used by a number of
+well-known open source projects such as the Linux kernel.</p>
+
+<p>snowpatch serves as a bridge between a patch tracking system and a continuous
+integration automation server. snowpatch monitors the patch queue for incoming
+patches, applies patches on top of an existing tree, triggers appropriate
+builds and test suites, and reports the results.</p>
+
+<p>At present, snowpatch supports
+<a href="http://github.com/dlespiau/patchwork">patchwork-freedesktop</a> and
+<a href="http://jenkins-ci.org">Jenkins</a>.</p>
+
+<p>snowpatch is named in honour of
+<a href="https://github.com/open-power/skiboot">skiboot</a>, the project which inspired the
+creation of snowpatch.</p>
+
+<h2>
+<a id="installing" class="anchor" href="#installing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing</h2>
+
+<p>snowpatch is a <a href="https://www.rust-lang.org">Rust</a> program.  In order to compile 
+it, you will need Rust and its package manager, Cargo.  snowpatch should run 
+on any target that Rust compiles on, however it has only been tested on Linux.
+We do not provide pre-built binaries at this stage.</p>
+
+<p>snowpatch also requires the <code>git</code> binary to be installed.  We try to use the 
+<a href="https://github.com/alexcrichton/git2-rs">git2-rs</a> library where possible,
+however some operations require the binary (such as applying patches).</p>
+
+<p>snowpatch can be compiled with <code>cargo build --release</code>, which will make
+<code>target/release/snowpatch</code>.</p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Please read our <a href="CONTRIBUTING.md">contribution guidelines</a> for more
+information about contributing.</p>
+
+<h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>snowpatch development is done on our mailing list,
+<a href="mailto:snowpatch@lists.ozlabs.org">snowpatch@lists.ozlabs.org</a>. To
+subscribe, go to the
+<a href="https://lists.ozlabs.org/listinfo/snowpatch">listinfo page</a>.</p>
+
+<p>Patches are tracked on
+<a href="https://patchwork.ozlabs.org/project/snowpatch/">patchwork.ozlabs.org</a>.</p>
+
+<p>snowpatch is maintained by
+<a href="mailto:ruscur@russell.cc">Russell Currey</a> and
+<a href="mailto:andrew.donnellan@au1.ibm.com">Andrew Donnellan</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright © 2016 IBM Corporation.</p>
+
+<p>This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+Street, Fifth Floor, Boston, MA 02110-1301, USA.</p>
+
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
